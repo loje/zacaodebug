@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>杂草校园</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+
+		<link rel="stylesheet" href="../main.css">
+		<style type="text/css">
+			.role-box{
+				position: absolute;
+				left: 0px;
+				top:0px;
+				width: 100%;
+				height: 100%;
+				display: table;
+				background-color: #6f564d;
+				background-position: 50%;
+				background-size: cover;
+				overflow: hidden;
+			}
+			.role-box .box-td{
+				position: relative;
+				display: table-cell;
+				vertical-align: middle;
+				width: 25%;
+				height: 100%;
+				z-index: 1;
+			}
+			.role-box .box-td:nth-child(2){
+				width: 50%;
+				overflow: hidden;
+				vertical-align: top;
+			}
+			.therole{
+				position: absolute;
+				left: 0px;
+				top:0px;
+				width: 100%;
+				height: 95%;
+				z-index: 0;
+			}
+			.therole .role-top,
+			.therole .role-mid,
+			.therole .role-btm{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-position: 50%;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			.therole .role-top{
+				z-index: 3;
+				background-image: url(img/role/boy/01.png);
+			}
+			.therole .role-mid{
+				z-index: 2;
+				background-image: url(img/role/boy/02.png);
+			}
+			.therole .role-btm{
+				z-index: 1;
+				background-image: url(img/role/boy/03.png);
+			}
+			.role-stage{
+				position: absolute;
+				left: 0px;
+				bottom: -65px;
+				width: 100%;
+				height: 90px;
+				background-image: url(img/stage.png);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position:50% 100%;
+				z-index: 0;
+			}
+			.role-box .box-td .sider{
+				position: relative;
+				padding: 0px 10px;
+				width: 100%;
+				text-align: center;
+			}
+			.role-box .box-td .sider .box{
+				margin-top: 25px;
+				margin-bottom: 2px;
+				width: 50px;
+				height: 50px;
+				background-color: #eee;
+				border-radius: 12px;
+				background-size: 50px;
+				background-image: none;
+				box-shadow: 0px 2px 0px #000;
+			}
+			.role-box .box-td .sider .box i.iconfontzacao{
+				font-size: 36px;
+				line-height: 50px;
+				color: rgba(0,0,0,0.35);
+			}
+			.role-box .box-td .sider .badge{
+				width: 80px;
+				background-color: rgba(0,0,0,0.5);
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="page">
+			<!-- <header class="bar bar-nav">
+				<h1 class="title">人物</h1>
+			</header> -->
+			<nav class="bar bar-tab">
+				<a class="tab-item active" href="index.html">
+					<span class="icon icon-me"></span>
+					<span class="tab-label">人物</span>
+				</a>
+				<a class="tab-item" href="../copy/index.html">
+					<span class="icon icon-star"></span>
+					<span class="tab-label">副本</span>
+				</a>
+				<a class="tab-item" href="../shop/index.html">
+					<span class="icon icon-gift"></span>
+					<span class="tab-label">商城</span>
+				</a>
+				<a class="tab-item" href="../user/index.html">
+					<span class="icon icon-settings"></span>
+					<span class="tab-label">我的</span>
+				</a>
+			</nav>
+			<div class="content role-content">
+				<div class="role-box">
+					<div class="box-td">
+						<div class="sider left-sider">
+							<a class="function bag-function" href="bag.html">
+								<div class="box" style="background-image: linear-gradient(-220deg, #5e8aef 46%, #4071de 47%);background-image: -webkit-linear-gradient(-220deg, #5e8aef 46%, #4071de 47%);box-shadow: 0px 2px 0px #35497a;">
+									<i class="iconfontzacao">&#xe666;</i>
+								</div>
+								<span class="badge">背包</span>
+							</a>
+							
+							<a class="function prove-function" href="../copy/prove.html">
+								<div class="box" style="background-image: linear-gradient(-220deg, #59b2f1 46%, #409dde 47%);background-image: -webkit-linear-gradient(-220deg, #59b2f1 46%, #409dde 47%);box-shadow: 0px 2px 0px #345474;">
+									<i class="iconfontzacao">&#xe64f;</i>
+								</div>
+								<span class="badge">技能</span>
+							</a>
+							<a class="function honor-function" href="honor.html">
+								<div class="box" style="background-image: linear-gradient(-220deg, #4cc2e0 46%, #26aacb 47%);background-image: -webkit-linear-gradient(-220deg, #4cc2e0 46%, #26aacb 47%);box-shadow: 0px 2px 0px #2a4e62;">
+									<i class="iconfontzacao">&#xe631;</i>
+								</div>
+								<span class="badge">荣誉殿堂</span>
+							</a>
+						</div>
+					</div>
+						<div class="therole">
+							<div class="role-top"></div>
+							<div class="role-mid"></div>
+							<div class="role-btm"></div>
+							<div class="role-stage"></div>
+						</div>
+					<div class="box-td left-sider">
+						<div class="sider right-sider">
+							<a class="function record-function" href="record.html">
+								<div class="box" style="background-image: linear-gradient(-220deg, #ffd632 46%, #e3bb1d 47%);background-image: -webkit-linear-gradient(-220deg, #ffd632 46%, #e3bb1d 47%);box-shadow: 0px 2px 0px #534f3b;">
+									<i class="iconfontzacao">&#xe608;</i>
+								</div>
+								<span class="badge">成就</span>
+							</a>
+							<a class="function ranking-function" href="ranking.html">
+								<div class="box" style="background-image: linear-gradient(-220deg, #ffaa32 46%, #eb900f 47%);background-image: -webkit-linear-gradient(-220deg, #ffaa32 46%, #eb900f 47%);box-shadow: 0px 2px 0px #5f4d3c;">
+									<i class="iconfontzacao">&#xe627;</i>
+								</div>
+								<span class="badge">天梯</span>
+							</a>
+							<a class="function shop-function" href="../shop/index.html">
+								<div class="box" style="background-image: linear-gradient(-220deg, #f37f6d 46%, #ea6e68 47%);background-image: -webkit-linear-gradient(-220deg, #f37f6d 46%, #ea6e68 47%);box-shadow: 0px 2px 0px #66434e;">
+									<i class="iconfontzacao">&#xe609;</i>
+								</div>
+								<span class="badge">黑店</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type='text/javascript' src='https://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+		<script type="text/javascript">
+			$.config = {router: false}
+		</script>
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+		<script type="text/javascript">
+			$(function(){
+				$.init();
+			})
+		</script>
+	</body>
+</html>

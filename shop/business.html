@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>杂草校园</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+
+		<link rel="stylesheet" href="../main.css">
+
+	</head>
+	<body>
+			<div class="page">
+				<header class="bar bar-nav">
+					<a href="shop.html" class="button button-link button-nav pull-left">
+						<span class="icon icon-left"></span>
+					</a>
+					<h1 class="title">创业介绍</h1>
+				</header>
+
+				<div class="content business-content">
+					<!-- Slider -->
+					<div class="swiper-container swiper-business" data-space-between='10' data-direction='vertical'>
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="the-page page1"></div>
+							</div>
+							<div class="swiper-slide">
+								<div class="the-page page2">
+									<div class="the-title"></div>
+									<div class="line"></div>
+									<div class="page-table">
+										<div class="page-tr">
+											<div class="page-td">
+												<div class="page2-t1"></div>
+											</div>
+											<div class="page-td">
+												<div class="pic" style="background-image: url(img/page2_p1.jpg);"></div>
+											</div>
+										</div>
+										<div class="page-tr">
+											<div class="page-td">
+												<div class="page2-t2"></div>
+											</div>
+											<div class="page-td">
+												<div class="pic" style="background-image: url(img/page2_p2.jpg);"></div>
+											</div>
+										</div>
+										<div class="page-tr">
+											<div class="page-td">
+												<div class="page2-t3"></div>
+											</div>
+											<div class="page-td">
+												<div class="pic" style="background-image: url(img/page2_p3.jpg);"></div>
+											</div>
+										</div>
+										<div class="page-tr">
+											<div class="page-td">
+												<div class="page2-t4"></div>
+											</div>
+											<div class="page-td">
+												<div class="pic" style="background-image: url(img/page2_p4.jpg);"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="the-page page3">
+									<div class="the-title"></div>
+									<div class="line"></div>
+									<div class="page-table">
+										<div class="page-tr">
+											<div class="page-td">
+												<div class="page3-t1"></div>
+											</div>
+											<div class="page-td">
+												<div class="pic" style="background-image: url(img/page3_p1.jpg);"></div>
+											</div>
+										</div>
+										<div class="page-tr">
+											<div class="page-td">
+												<div class="page3-t2"></div>
+											</div>
+											<div class="page-td">
+												<div class="pic" style="background-image: url(img/page3_p2.jpg);"></div>
+											</div>
+										</div>
+										<div class="page-tr">
+											<div class="page-td">
+												<div class="page3-t3"></div>
+											</div>
+											<div class="page-td">
+												<div class="pic" style="background-image: url(img/page3_p3.jpg);"></div>
+											</div>
+										</div>
+										<div class="page-tr">
+											<div class="page-td">
+												<div class="page3-t4"></div>
+											</div>
+											<div class="page-td">
+												<div class="pic" style="background-image: url(img/page3_p4.jpg);"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="the-page page4">
+									<div class="line"></div>
+									<a class="btn getreport"></a>
+									<div class="page4-bg"></div>
+								</div>
+								
+								<div class="h5_btm">
+									<div class="cop" style="background-image: url(img/h5_btm.png);"></div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+
+		<script type='text/javascript' src='https://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+		<script type="text/javascript">
+			$.config = {router: false}
+		</script>
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+		<script type="text/javascript" src='../js/zepto.cookie.min.js' charset='utf-8'></script>
+		<script type="text/javascript">
+			$(function(){
+				$.init();
+
+				$(document).on('click', '.getreport',function (){
+					$.fn.cookie('foo','bar',{expires:1 ,path:'/'});
+					self.location='../user/index.html';
+				})
+			})
+		</script>
+	</body>
+</html>

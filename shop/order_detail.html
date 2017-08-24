@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>杂草校园</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+
+		<link rel="stylesheet" href="../main.css">
+		<style type="text/css">
+			.order-info{
+				margin-bottom: 15px;
+				padding: 10px;
+				background-color: #fff;
+			}
+			.order-info p{
+				margin: 0px;
+				padding: 2px 0px;
+				letter-spacing: 1px;
+			}
+			.order-info p:nth-child(2){
+				text-transform:uppercase;
+			}
+
+			.order-info .list-title h5{
+				margin: 0px;
+				padding-bottom: 5px;
+				font-weight: normal;
+				letter-spacing: 1px;
+				color: #999;
+				border-bottom: 1px dotted #ccc;
+			}
+			.order-info .goods-list .media{
+				padding-top: 10px;
+			}
+			.order-info .goods-list .media .media-left{
+				display: table-cell;
+				vertical-align: top;
+			}
+			.order-info .goods-list .media .media-left .goods-pic{
+				width: 60px;
+				height: 60px;
+				background-size: cover;
+			}
+			.order-info .goods-list .media .media-body{
+				display: table-cell;
+				padding-left: 10px;
+				vertical-align: top;
+			}
+			.order-info .goods-list .media .media-body h5{
+				margin: 0px;
+				padding-bottom: 5px;
+				font-size: 14px;
+				letter-spacing: 1px;
+			}
+			.order-info .goods-list .media .media-body p{
+				padding: 0px;
+				color: #999;
+				font-size: 12px;
+			}
+			.order-info .goods-list .media .media-body .price span{
+				color: #cc3333;
+			}
+			.order-info .goods-list .media .media-body .price span:nth-child(2){
+				text-decoration:line-through;
+				color: #ccc;
+			}
+
+			.order-info .price-info{
+				text-align: right;
+				margin-top: 10px;
+				padding-top: 10px;
+				border-top: 1px dotted #ccc;
+			}
+			.addr-info{
+				margin: 0px;
+				background-color: #bb7d48;
+			}
+			.addr-info p{
+				font-size: 12px;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="page order_page">
+			<header class="bar bar-nav">
+				<a href="javascript:history.go(-1);" class="button button-link button-nav pull-left">
+					<span class="icon icon-left"></span>
+				</a>
+				<a href="shop_cart.html" class="button button-link button-nav pull-right">
+					<i class="iconfontzacao">&#xe60f;</i>
+				</a>
+				<h1 class="title">我的订单</h1>
+			</header>
+
+			<div class="content order-content">
+				<div class="order-info">
+					<p>下单时间 2016-11-07 17:35</p>
+					<p>订单编号 20170112gekq0545</p>
+				</div>
+
+				<div class="order-info">
+					<div class="list-title">
+						<h5>商品列表</h5>
+					</div>
+					<div class="goods-list">
+						<div class="media">
+							<div class="media-left">
+								<div class="goods-pic" style="background-image: url(http://ued.qifanhui.cn/Uploads/Home/Banner/20161018/58059a6497f29.jpg);"></div>
+							</div>
+							<div class="media-body">
+								<h5>三行情书</h5>
+								<p>深大版 x1</p>
+								<div class="price">
+									<span>21颗种子</span>
+									<span>63颗种子</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="media">
+							<div class="media-left">
+								<div class="goods-pic" style="background-image: url(http://ued.qifanhui.cn/Uploads/Home/Banner/20161018/58059a6497f29.jpg);"></div>
+							</div>
+							<div class="media-body">
+								<h5>三行情书</h5>
+								<p>深大版 x1</p>
+								<div class="price">
+									<span>21颗种子</span>
+									<span>63颗种子</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="price-info">
+						<p>商品合计 42颗种子</p>
+					</div>
+				</div>
+
+				<div class="order-info addr-info">
+					<p>请到我司或指定兑换点，凭【订单号】领取所兑换的商品;</p>
+					<p>我司地址：深圳南山区西丽同发路6号T6艺术区（深职院北校区斜对面）1楼A12;</p>
+					<p>兑换时间：工作日早上9点到下午5点;</p>
+				</div>
+			</div>
+		</div>
+
+		<script type='text/javascript' src='https://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+		<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$.config = {router: false};
+			var Zepto = jQuery;
+		</script>
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+		<script type="text/javascript">
+			$(function(){
+			    $.init();
+
+				$(".shop-content").scroll(function(event) {
+					if($(".shop-content").scrollTop()==0){
+						$(".bar-nav").removeAttr("style");
+					}
+					if($(".shop-content").scrollTop()!=0){
+						$(".bar-nav").attr("style","opacity:1;");
+					}
+				});
+			})
+		</script>
+	</body>
+</html>

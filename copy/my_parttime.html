@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>杂草校园</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+
+		<link rel="stylesheet" href="../main.css">
+	</head>
+	<body>
+			<div class="page page-current my_parttime">
+				<header class="bar bar-nav">
+					<a external href="javascript:history.go(-1);" class="button button-link button-nav pull-left">
+						<span class="icon icon-left"></span>
+					</a>
+					<a class="button button-link button-nav pull-right search">
+						<span class="icon icon-search"></span>
+					</a>
+					<h1 class='title'>我的兼职</h1>
+
+					<div class="searchbar row" style="display: none;">
+						<a class="button button-fill button-primary close-searchbar col-15">
+							<i class="iconfontzacao">&#xe604;</i>
+						</a>
+						<div class="search-input col-70">
+							<label class="icon icon-search" for="search"></label>
+							<input type="search" id='search' placeholder='输入关键字...'/>
+						</div>
+						<a class="button button-fill button-primary go-search col-15">
+							<span class="icon icon-search"></span>
+						</a>
+					</div>
+				</header>
+				<div class="content infinite-scroll infinite-scroll-bottom parttime-content">
+					<div class="list-block">
+						<a external href="parttime_detail.html" class="media">
+							<div class="media-body">
+								<h5>演艺活动现场驻点 <span class="badge badge-parttime">急招</span></h5>
+								<p><span class="date">2017/1/1</span> <span>深圳南山</span></p>
+							</div>
+							<div class="media-right">
+								<span>150</span>
+								<p>元/天</p>
+								<label class="badge badge-pass">已通过</label>
+							</div>
+						</a>
+						<a external href="parttime_detail.html" class="media">
+							<div class="media-body">
+								<h5>演艺活动现场驻点 <span class="badge badge-parttime">急招</span></h5>
+								<p><span class="date">2017/1/1</span> <span>深圳南山</span></p>
+							</div>
+							<div class="media-right">
+								<span>100~200</span>
+								<p>元/天</p>
+								<label class="badge badge-waiting">等待审核</label>
+							</div>
+						</a>
+						<a external href="parttime_detail.html" class="media">
+							<div class="media-body">
+								<h5>演艺活动现场驻点 <span class="badge badge-parttime">已截止</span></h5>
+								<p><span class="date">2017/1/1</span> <span>深圳南山</span></p>
+							</div>
+							<div class="media-right">
+								<span>150</span>
+								<p>元/天</p>
+								<label class="badge badge-pass">已通过</label>
+							</div>
+						</a>
+					</div>
+					<!-- 加载提示符 -->
+					<div class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+					</div>
+				</div>
+			</div>
+
+
+		<script type='text/javascript' src='https://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+		<script type="text/javascript">
+			$.config = {router: false}
+		</script>
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+		<!-- <script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script> -->
+		<script type="text/javascript">
+			$(function () {
+				$.init();
+
+				$(document).on('click','.search',function(){
+					$(".my_parttime header.bar .searchbar").removeAttr("style");
+				})
+				$(document).on('click', '.my_parttime header.bar .searchbar .close-searchbar', function () {
+					$(".my_parttime header.bar .searchbar").attr("style","display:none;");
+				})
+
+			// 加载flag
+		      var loading = false;
+		      // 最多可加载的条目
+		      var maxItems = 20;
+
+		      // 每次加载添加多少条目
+		      var itemsPerLoad = 5;
+
+		      function addItems(number, lastIndex) {
+		              // 生成新条目的HTML
+		              var html = '';
+		              for (var i = lastIndex + 1; i <= lastIndex + number; i++) {
+		                  html += '<a external href="parttime_detail.html" class="media">' +
+										'<div class="media-body">' +
+											'<h5>演艺活动现场驻点 <span class="badge badge-parttime">急招</span></h5>' +
+											'<p><span class="date">2017/1/1</span> <span>深圳南山</span></p>' +
+										'</div>' +
+										'<div class="media-right">' +
+											'<span>150</span>' +
+											'<p>元/天</p>' +
+											'<label class="badge badge-pass">已通过</label>' +
+										'</div>' +
+									'</a>';
+		              }
+		              // 添加新条目
+		              $('.infinite-scroll-bottom .list-block').append(html);
+
+		          }
+		          //预先加载20条
+		      addItems(itemsPerLoad, 0);
+
+		      // 上次加载的序号
+
+		      var lastIndex = 5;
+
+		      // 注册'infinite'事件处理函数
+		      $(document).on('infinite', '.infinite-scroll-bottom',function() {
+
+		          // 如果正在加载，则退出
+		          if (loading) return;
+
+		          // 设置flag
+		          loading = true;
+
+		          // 模拟1s的加载过程
+		          setTimeout(function() {
+		              // 重置加载flag
+		              loading = false;
+
+		              if (lastIndex >= maxItems) {
+		                  // 加载完毕，则注销无限加载事件，以防不必要的加载
+		                  $.detachInfiniteScroll($('.infinite-scroll'));
+		                  // 删除加载提示符
+		                  $('.infinite-scroll-preloader').remove();
+		                  $('.infinite-scroll-bottom .list-block').append('<div class="loaded">加载完毕</div>');
+		                  return;
+		              }
+
+		              // 添加新条目
+		              addItems(itemsPerLoad, lastIndex);
+		              // 更新最后加载的序号
+		              lastIndex = $('.list-block .media').length;
+		              //容器发生改变,如果是js滚动，需要刷新滚动
+		              $.refreshScroller();
+		          }, 1000);
+		      });
+			})
+		</script>
+	</body>
+</html>

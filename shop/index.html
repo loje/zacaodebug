@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>杂草校园</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+
+		<link rel="stylesheet" href="../main.css">
+		<style type="text/css">
+			header.bar-nav{
+				background: linear-gradient(top, rgb(0, 0, 0), rgba(0, 0, 0, 0) 100%);
+				background: -o-linear-gradient(top, rgb(0, 0, 0), rgba(0, 0, 0, 0) 100%);
+				background: -ms-linear-gradient(top, rgb(0, 0, 0), rgba(0, 0, 0, 0) 100%);
+				background: -moz-linear-gradient(top, rgb(0, 0, 0), rgba(0, 0, 0, 0) 100%);
+				background: -webkit-linear-gradient(top, rgb(0, 0, 0), rgba(0, 0, 0, 0) 100%);
+				opacity: 0.5;
+			}
+			.shop-content{
+				top:0px!important;
+			}
+
+
+			.input-search {
+				padding: 5px 5px 5px 0px;
+				position: relative;
+				display: table;
+				border-collapse: separate;
+			}
+
+			.input-search .form-control {
+				float: left;
+				width: 100%;
+				display: block;
+				padding: 6px 12px;
+				font-size: 14px;
+				line-height: 1.42857143;
+				height: 40px;
+				border-top-left-radius: 4px;
+				border-bottom-left-radius: 4px;
+				border: none;
+				color: #333;
+			}
+
+			.input-search .input-group-btn{
+				display: table-cell;
+				width: 1%;
+				white-space: nowrap;
+				vertical-align: middle;
+			}
+
+			.input-search .input-group-btn .btn {
+				display: inline-block;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 1.42857143;
+				text-align: center;
+				border: none;
+				padding: 9px 12px;
+				height: 40px;
+				border-top-right-radius: 4px;
+				border-bottom-right-radius: 4px;
+				color: #333;
+				background-color: #fff;
+				border-color: #ccc;
+			}
+
+			.input-search .input-group-btn .btn i.iconfont {
+				font-size: 20px;
+			}
+
+			.pull-right{
+				padding-left: 10px!important;
+				padding-right: 10px!important;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="page page-current">
+			<header class="bar bar-nav">
+				<a href="shop_cart.html" class="button button-link button-nav pull-right">
+					<i class="iconfontzacao">&#xe60f;</i>
+				</a>
+				<div class="input-group input-search">
+					<input type="text" name="" class="form-control keyword" value="" placeholder="搜索商品" />
+					<span class="input-group-btn submit-btn">
+						<button class="btn btn-default" type="button" onclick="search_shop()">
+							<i class="iconfontzacao">&#xe611;</i>
+						</button>
+					</span>
+				</div>
+			</header>
+
+			<nav class="bar bar-tab">
+				<a class="tab-item" href="../role/index.html">
+					<span class="icon icon-me"></span>
+					<span class="tab-label">人物</span>
+				</a>
+				<a class="tab-item" href="../copy/index.html">
+					<span class="icon icon-star"></span>
+					<span class="tab-label">副本</span>
+				</a>
+				<a class="tab-item active" href="index.html">
+					<span class="icon icon-gift"></span>
+					<span class="tab-label">商城</span>
+				</a>
+				<a class="tab-item" href="../user/index.html">
+					<span class="icon icon-settings"></span>
+					<span class="tab-label">我的</span>
+				</a>
+			</nav>
+				<div class="content shop-content">
+					<!-- Slider -->
+					<div class="swiper-container swiper-shop" data-space-between='0'>
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="img" style="background-image: url(http://ued.qifanhui.cn/Uploads/Home/Banner/20160511/5732a0978d40c.jpg);"></div>
+							</div>
+							<div class="swiper-slide">
+								<div class="img" style="background-image: url(http://ued.qifanhui.cn/Uploads/Home/Banner/20161018/5805f301b9985.jpg);"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="shop-function">
+						<div class="row">
+							<div class="col-25">
+								<a href="shop_list.html">
+									<i class="iconfontzacao">&#xe616;</i>
+									<p>全部商品</p>
+								</a>
+							</div>
+							<div class="col-25">
+								<a href="shop_list2.html">
+									<i class="iconfontzacao">&#xe60d;</i>
+									<p>虚拟道具</p>
+								</a>
+							</div>
+							<div class="col-25">
+								<a href="shop_list.html">
+									<i class="iconfontzacao">&#xe618;</i>
+									<p>限时特惠</p>
+								</a>
+							</div>
+							<div class="col-25">
+								<a href="order_list.html">
+									<i class="iconfontzacao">&#xe619;</i>
+									<p>我的订单</p>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="product-entity">
+						<h4>
+							<i class="iconfontzacao">&#xe615;</i> 实体物品
+							<a href="shop_list.html">
+								更多 <i class="iconfontzacao">&#xe612;</i>
+							</a>
+						</h4>
+						<div class="row">
+							<div class="col-25">
+								<a href="shop_detail.html">
+									<div class="product-img" style="background-image: url(http://ued.qifanhui.cn/Uploads/Home/Banner/20160511/573294b03880e.jpg);">
+										<span class="product-state">实</span>
+									</div>
+									<h5>深职羊皮纸地图</h5>
+									<p>3颗种子</p>
+								</a>
+							</div>
+							<div class="col-25">
+								<a href="shop_detail.html">
+									<div class="product-img" style="background-image: url(http://ued.qifanhui.cn/Uploads/Home/Banner/20161102/5819c6930798a.jpg);">
+										<span class="product-state">实</span>
+									</div>
+									<h5>深信羊皮纸地图</h5>
+									<p>3颗种子</p>
+								</a>
+							</div>
+							<div class="col-25">
+								<a href="shop_detail.html">
+									<div class="product-img" style="background-image: url(http://ued.qifanhui.cn/Uploads/Home/Banner/20161102/5819c5d965b7c.jpg);">
+										<span class="product-state">实</span>
+									</div>
+									<h5>深大羊皮纸地图</h5>
+									<p>3颗种子</p>
+								</a>
+							</div>
+							<div class="col-25">
+								<a href="shop_detail.html">
+									<div class="product-img" style="background-image: url(http://ued.qifanhui.cn/Uploads/Home/Banner/20161123/58353b6d577f2.jpg);">
+										<span class="product-state">实</span>
+									</div>
+									<h5>3MINS满减优惠</h5>
+									<p>3颗种子</p>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="product-entity">
+						<h4>
+							<i class="iconfontzacao">&#xe613;</i> 虚拟道具
+							<a href="shop_list2.html">
+								更多 <i class="iconfontzacao">&#xe612;</i>
+							</a>
+						</h4>
+						<div class="row">
+							<div class="col-25">
+								<a href="shop_detail.html">
+									<div class="product-img" style="background-image: url(../role/img/horn.jpg);">
+										<span class="product-state">虚</span>
+									</div>
+									<h5>广播大喇叭</h5>
+									<p>3颗种子</p>
+								</a>
+							</div>
+							<div class="col-25">
+								<a href="shop_detail.html">
+									<div class="product-img" style="background-image: url(../role/img/horn2.jpg);">
+										<span class="product-state">虚</span>
+									</div>
+									<h5>巴拉拉能量</h5>
+									<p>5颗种子</p>
+								</a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<script type='text/javascript' src='https://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+		<script type="text/javascript">
+			$.config = {router: false}
+		</script>
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+		<script type="text/javascript">
+			$(function(){
+				$.init();
+				$(".swiper-shop").height($(".swiper-shop").width() * 0.5625);
+				$(window).resize(function() {
+					$(".swiper-shop").height($(".swiper-shop").width() * 0.5625);
+				})
+				$(".shop-content").scroll(function(event) {
+					if($(".shop-content").scrollTop()==0){
+						$(".bar-nav").removeAttr("style");
+					}
+					if($(".shop-content").scrollTop()!=0){
+						$(".bar-nav").attr("style","opacity:1;");
+					}
+				});
+			})
+		</script>
+	</body>
+</html>

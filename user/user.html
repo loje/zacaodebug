@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>杂草校园</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+
+		<link rel="stylesheet" href="../openlayers/theme/default/style.css" type="text/css" />
+
+		<link rel="stylesheet" href="../main.css">
+
+	</head>
+	<body>
+		<div class="page page-current">
+			<header class="bar bar-nav">
+				<a href="javascript:history.go(-1);" class="button button-link button-nav pull-left">
+					<span class="icon icon-left"></span>
+				</a>
+				<h1 class="title">个人信息</h1>
+			</header>
+			<div class="content">
+				<div class="user-top">
+					<a class="media">
+						<div class="media-left">
+							<div class="user-logo" style="background-image: url(img/userimg.jpg);"></div>
+						</div>
+						<div class="media-body">
+							<h5>浩秋</h5>
+							<p>2016-12-12 加入杂草校园</p>
+						</div>
+					</a>
+				</div>
+				<div class="user-info">
+					<div class="content-block-title">基本信息</div>
+					<div class="list-block">
+						<ul>
+							<li class="item-content">
+								<div class="item-inner">
+									<div class="item-title">昵称</div>
+									<div class="item-after">鱼儿</div>
+								</div>
+							</li>
+							<li class="item-content">
+								<div class="item-inner">
+									<div class="item-title">姓名</div>
+									<div class="item-after">张英俊</div>
+								</div>
+							</li>
+							<li class="item-content user-sex">
+								<div class="item-inner">
+									<div class="item-title">性别</div>
+									<div class="item-after">
+										<div class="item-input">
+											<select disabled="disabled">
+												<option>男</option>
+												<option>女</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="content-block-title">联系方式</div>
+					<div class="list-block">
+						<ul>
+							<li class="item-content user-phone">
+								<div class="item-inner">
+									<div class="item-title">手机</div>
+									<div class="item-after">
+										<div class="item-input">
+											<input type="text" placeholder="13800138000" disabled="disabled">
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="item-content user-email">
+								<div class="item-inner">
+									<div class="item-title">邮箱</div>
+									<div class="item-after">
+										<div class="item-input">
+											<input type="text" placeholder="anyone@qifanhui.cn" disabled="disabled">
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="content-block-title">学校信息</div>
+					<div class="list-block">
+						<ul>
+							<li class="item-content">
+								<div class="item-inner">
+									<div class="item-title">学校</div>
+									<div class="item-after">深圳职业技术学院</div>
+								</div>
+							</li>
+							<li class="item-content">
+								<div class="item-inner">
+									<div class="item-title">学号</div>
+									<div class="item-after">12345678</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="button-group">
+						<a href="#" class="button button-big button-fill button-warning edit-userinfo">编辑个人信息</a>
+						<a href="#" class="button button-big button-fill save-userinfo" style="display: none">提交更改</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type='text/javascript' src='https://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+		<script type="text/javascript">
+			$.config = {router: false}
+		</script>
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+		<!-- <script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script> -->
+
+		<script type="text/javascript">
+			$(function(){
+			    $.init();
+
+				$("#picker").picker({
+				  toolbarTemplate: '<header class="bar bar-nav">\
+				  <button class="button button-link pull-right close-picker">确定</button>\
+				  <h1 class="title">请选择周数</h1>\
+				  </header>',
+				  cols: [
+				    {
+				      textAlign: 'center',
+				      values: ['第1周', '第2周', '第3周', '第4周', '第5周', '第6周', '第7周', '第8周', '第9周', '第10周', '第11周', '第12周']
+				    }
+				  ]
+				});
+
+				$(document).on('click','.edit-userinfo', function () {
+					$(".user-sex").find("select").removeAttr("disabled");
+					$(".user-phone").find("input").removeAttr("disabled");
+					$(".user-email").find("input").removeAttr("disabled");
+					$(".user-sex").addClass("edit");
+					$(".user-phone").addClass("edit");
+					$(".user-email").addClass("edit");
+					$(this).attr("style","display:none");
+					$(".save-userinfo").removeAttr("style");
+				});
+				$(document).on('click','.save-userinfo', function () {
+					$(".user-sex").find("select").attr("disabled","disabled");
+					$(".user-phone").find("input").attr("disabled","disabled");
+					$(".user-email").find("input").attr("disabled","disabled");
+					$(".user-sex").removeClass("edit");
+					$(".user-phone").removeClass("edit");
+					$(".user-email").removeClass("edit");
+					$(this).attr("style","display:none");
+					$(".edit-userinfo").removeAttr("style");
+					$.alert("更改成功!");
+				});
+
+			})
+		</script>
+
+	</body>
+</html>

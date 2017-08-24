@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>杂草校园</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+		<link rel="stylesheet" href="../main.css">
+		<style type="text/css">
+			.the-role{
+				display: table;
+			}
+			.the-role-td{
+				display: table-cell;
+				vertical-align: top;
+			}
+			.therole{
+				position: relative;
+				margin: auto;
+				width: 100%;
+				height: 90%;
+			}
+
+			.therole .role-top,
+			.therole .role-mid,
+			.therole .role-btm{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-position: 50%;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			.therole .role-top{
+				z-index: 3;
+				background-image: url(img/role/boy/01.png);
+			}
+			.therole .role-mid{
+				z-index: 2;
+				background-image: url(img/role/boy/02.png);
+			}
+			.therole .role-btm{
+				z-index: 1;
+				background-image: url(img/role/boy/03.png);
+			}
+
+			.role-content .content-row .the-bag .bag-td .hair-content ul li a.hair span{
+				background-size: cover;
+			}
+
+			.submit-change{
+				position: fixed;
+				left: 0px;
+				bottom: 0px;
+				width: 100%;
+				border-bottom: 2px solid #645250;
+				text-align: center;
+				z-index: 2;
+			}
+			.submit-change button{
+				padding: 10px 12px;
+				border:none;
+				border-top-left-radius: 6px;
+				border-top-right-radius: 6px;
+				background-color: #645250;
+				color: #fff;
+				letter-spacing: 1px;
+			}
+
+		</style>
+	</head>
+	<body class="role_page">
+		<div class="page">
+			<header class="bar bar-nav">
+				<a class="button button-link button-nav pull-left" href="javascript:window.history.back();location.reload();">
+					<span class="icon icon-left"></span>
+				</a>
+				<h1 class="title">背包</h1>
+			</header>
+
+			<div class="content role-content">
+
+				<div class="content-row">
+					<div class="the-role">
+						<div class="the-role-td">
+							<div class="therole">
+								<div class="role-top"></div>
+								<div class="role-mid"></div>
+								<div class="role-btm"></div>
+							</div>
+						</div>
+					</div>
+					<div class="the-bag">
+						<div class="bag-td">
+							<div class="bag-sected guide-next">
+								<ul>
+									<li>
+										<a class="sected-hair">
+											<i style="background-image: url(img/role/boy/icon_head.png);"></i>
+											<span>头部</span>
+										</a>
+									</li>
+									<li>
+										<a class="sected-coat">
+											<i style="background-image: url(img/role/boy/icon_coat.png);"></i>
+											<span>上身</span>
+										</a>
+									</li>
+									<li>
+										<a class="sected-pants">
+											<i style="background-image: url(img/role/boy/icon_trousers.png);"></i>
+											<span>下身</span>
+										</a>
+									</li>
+									<li>
+										<a class="sected-rolebg">
+											<i style="background-image: url(img/rolebg1.jpg);"></i>
+											<span>背景</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="hair-content" style="display: none;">
+								<h5>头部</h5>
+								<i class="iconfontzacao">&#xe774;</i>
+								<ul>
+									<li>
+										<a class="hair">
+											<span style="background-image: url(img/role/boy/head/mini_1.png);"></span>
+											<p>秀外慧中</p>
+										</a>
+									</li>
+									<li>
+										<a class="hair">
+											<span style="background-image: url(img/role/boy/head/mini_2.png);"></span>
+											<p>甜美委婉</p>
+										</a>
+									</li>
+									<li>
+										<a class="hair">
+											<span style="background-image: url(img/role/boy/head/mini_3.png);"></span>
+											<p>愣头愣脑</p>
+										</a>
+									</li>
+									<li>
+										<a class="hair">
+											<span style="background-image: url(img/role/boy/head/mini_4.png);"></span>
+											<p>摇滚大叔</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="coat-content" style="display: none;">
+								<h5>上身</h5>
+								<i class="iconfontzacao">&#xe774;</i>
+								<ul>
+									<li>
+										<a class="coat">
+											<span style="background-image: url(img/role/boy/coat/mini_1.png);"></span>
+											<p>彩虹条纹</p>
+										</a>
+									</li>
+									<li>
+										<a class="coat">
+											<span style="background-image: url(img/role/boy/coat/mini_2.png);"></span>
+											<p>缤纷夏季</p>
+										</a>
+									</li>
+									<li>
+										<a class="coat">
+											<span style="background-image: url(img/role/boy/coat/mini_3.png);"></span>
+											<p>冬季鹏城</p>
+										</a>
+									</li>
+									<li>
+										<a class="coat">
+											<span style="background-image: url(img/role/boy/coat/mini_4.png);"></span>
+											<p>温室效应</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="pants-content" style="display: none;">
+								<h5>下身</h5>
+								<i class="iconfontzacao">&#xe774;</i>
+								<ul>
+									<li>
+										<a class="pants">
+											<span style="background-image: url(img/role/boy/trousers/mini_1.png);"></span>
+											<p>浅蓝简约</p>
+										</a>
+									</li>
+									<li>
+										<a class="pants">
+											<span style="background-image: url(img/role/boy/trousers/mini_2.png);"></span>
+											<p>轻松自在</p>
+										</a>
+									</li>
+									<li>
+										<a class="pants">
+											<span style="background-image: url(img/role/boy/trousers/mini_3.png);"></span>
+											<p>下田插秧</p>
+										</a>
+									</li>
+									<li>
+										<a class="pants">
+											<span style="background-image: url(img/role/boy/trousers/mini_4.png);"></span>
+											<p>雪地精灵</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="rolebg-content" style="display: none;">
+								<h5>背景</h5>
+								<i class="iconfontzacao">&#xe774;</i>
+								<ul>
+									<li>
+										<a class="rolebg">
+											<span style="background-image: url(img/rolebg1.jpg);"></span>
+											<p>在路上</p>
+										</a>
+									</li>
+									<li>
+										<a class="rolebg">
+											<span style="background-image: url(img/rolebg2.jpg);"></span>
+											<p>高山景行</p>
+										</a>
+									</li>
+									<li>
+										<a class="rolebg">
+											<span style="background-image: url(img/rolebg3.jpg);"></span>
+											<p>彩色街道</p>
+										</a>
+									</li>
+									<li>
+										<a class="rolebg">
+											<span style="background-image: url(img/rolebg4.jpg);"></span>
+											<p>休闲之地</p>
+										</a>
+									</li>
+									<li>
+										<a class="rolebg">
+											<span style="background-image: url(img/rolebg5.jpg);"></span>
+											<p>都市角落</p>
+										</a>
+									</li>
+									<li>
+										<a class="rolebg">
+											<span style="background-image: url(img/rolebg6.jpg);"></span>
+											<p>城市之旅</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="submit-change">
+					<button>保存装扮</button>
+				</div>
+					
+				<div class="role-index" style="background-image: url(img/roleindex_bg.jpg);"></div>
+			</div>
+		</div>
+
+		<script type='text/javascript' src='https://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+		<script type="text/javascript">
+			$.config = {router: false}
+		</script>
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+
+		<script type="text/javascript">
+			$(function () {
+				$.init();
+				$(".role-content .content-row .the-bag .bag-td .hair-content i.iconfontzacao").click(function(){
+					$(".role-content .content-row .the-bag .bag-td .hair-content").attr("style","display:none;");
+					$(".role-content .content-row .the-bag .bag-td .bag-sected").removeAttr("style");
+				})
+				$(".role-content .content-row .the-bag .bag-td .coat-content i.iconfontzacao").click(function(){
+					$(".role-content .content-row .the-bag .bag-td .coat-content").attr("style","display:none;");
+					$(".role-content .content-row .the-bag .bag-td .bag-sected").removeAttr("style");
+				})
+				$(".role-content .content-row .the-bag .bag-td .pants-content i.iconfontzacao").click(function(){
+					$(".role-content .content-row .the-bag .bag-td .pants-content").attr("style","display:none;");
+					$(".role-content .content-row .the-bag .bag-td .bag-sected").removeAttr("style");
+				})
+				$(".role-content .content-row .the-bag .bag-td .rolebg-content i.iconfontzacao").click(function(){
+					$(".role-content .content-row .the-bag .bag-td .rolebg-content").attr("style","display:none;");
+					$(".role-content .content-row .the-bag .bag-td .bag-sected").removeAttr("style");
+				})
+
+
+				$(".role-content .content-row .the-bag .bag-td .bag-sected ul li a.sected-hair").click(function(){
+					$(".role-content .content-row .the-bag .bag-td .bag-sected").attr("style","display:none;");
+					$(".role-content .content-row .the-bag .bag-td .hair-content").removeAttr("style");
+				})
+				$(".role-content .content-row .the-bag .bag-td .bag-sected ul li a.sected-coat").click(function(){
+					$(".role-content .content-row .the-bag .bag-td .bag-sected").attr("style","display:none;");
+					$(".role-content .content-row .the-bag .bag-td .coat-content").removeAttr("style");
+				})
+				$(".role-content .content-row .the-bag .bag-td .bag-sected ul li a.sected-pants").click(function(){
+					$(".role-content .content-row .the-bag .bag-td .bag-sected").attr("style","display:none;");
+					$(".role-content .content-row .the-bag .bag-td .pants-content").removeAttr("style");
+				})
+				$(".role-content .content-row .the-bag .bag-td .bag-sected ul li a.sected-rolebg").click(function(){
+					$(".role-content .content-row .the-bag .bag-td .bag-sected").attr("style","display:none;");
+					$(".role-content .content-row .the-bag .bag-td .rolebg-content").removeAttr("style");
+				})
+
+
+				$(document).on('click','.role-content .content-row .the-bag .bag-td .rolebg-content ul li a.rolebg',function(){
+					$(".role-index").removeAttr("style");
+					$(".role-index").attr("style","background-image:" + $(this).find("span").css("backgroundImage") + ";");
+				})
+
+
+
+				//换头发
+				$(document).on('click','.role-content .content-row .the-bag .bag-td .hair-content ul li:nth-child(1) a.hair',function(){
+					$(".role-content .content-row .the-role .role-top").removeAttr("style");
+					$(".role-content .content-row .the-role .role-top").attr("style","background-image:url(img/role/boy/head/1.png);");
+				})
+				$(document).on('click','.role-content .content-row .the-bag .bag-td .hair-content ul li:nth-child(2) a.hair',function(){
+					$(".role-content .content-row .the-role .role-top").removeAttr("style");
+					$(".role-content .content-row .the-role .role-top").attr("style","background-image:url(img/role/boy/head/2.png);");
+				})
+				$(document).on('click','.role-content .content-row .the-bag .bag-td .hair-content ul li:nth-child(3) a.hair',function(){
+					$(".role-content .content-row .the-role .role-top").removeAttr("style");
+					$(".role-content .content-row .the-role .role-top").attr("style","background-image:url(img/role/boy/head/3.png);");
+				})
+				$(document).on('click','.role-content .content-row .the-bag .bag-td .hair-content ul li:nth-child(4) a.hair',function(){
+					$(".role-content .content-row .the-role .role-top").removeAttr("style");
+					$(".role-content .content-row .the-role .role-top").attr("style","background-image:url(img/role/boy/head/4.png);");
+				})
+				
+
+				//上衣
+				$(document).on('click','.role-content .content-row .the-bag .bag-td .coat-content ul li:nth-child(1) a.coat',function(){
+					$(".role-content .content-row .the-role .role-mid").removeAttr("style");
+					$(".role-content .content-row .the-role .role-mid").attr("style","background-image:url(img/role/boy/coat/1.png);");
+				})
+				$(document).on('click','.role-content .content-row .the-bag .bag-td .coat-content ul li:nth-child(2) a.coat',function(){
+					$(".role-content .content-row .the-role .role-mid").removeAttr("style");
+					$(".role-content .content-row .the-role .role-mid").attr("style","background-image:url(img/role/boy/coat/2.png);");
+				})
+				$(document).on('click','.role-content .content-row .the-bag .bag-td .coat-content ul li:nth-child(3) a.coat',function(){
+					$(".role-content .content-row .the-role .role-mid").removeAttr("style");
+					$(".role-content .content-row .the-role .role-mid").attr("style","background-image:url(img/role/boy/coat/3.png);");
+				})
+				$(document).on('click','.role-content .content-row .the-bag .bag-td .coat-content ul li:nth-child(4) a.coat',function(){
+					$(".role-content .content-row .the-role .role-mid").removeAttr("style");
+					$(".role-content .content-row .the-role .role-mid").attr("style","background-image:url(img/role/boy/coat/4.png);");
+				})
+				
+				// 裤子
+				$(document).on('click','.role-content .content-row .the-bag .bag-td .pants-content ul li:nth-child(1) a.pants',function(){
+					$(".role-content .content-row .the-role .role-btm").removeAttr("style");
+					$(".role-content .content-row .the-role .role-btm").attr("style","background-image:url(img/role/boy/trousers/1.png);");
+				})
+				$(document).on('click','.role-content .content-row .the-bag .bag-td .pants-content ul li:nth-child(2) a.pants',function(){
+					$(".role-content .content-row .the-role .role-btm").removeAttr("style");
+					$(".role-content .content-row .the-role .role-btm").attr("style","background-image:url(img/role/boy/trousers/2.png);");
+				})
+				$(document).on('click','.role-content .content-row .the-bag .bag-td .pants-content ul li:nth-child(3) a.pants',function(){
+					$(".role-content .content-row .the-role .role-btm").removeAttr("style");
+					$(".role-content .content-row .the-role .role-btm").attr("style","background-image:url(img/role/boy/trousers/3.png);");
+				})
+				$(document).on('click','.role-content .content-row .the-bag .bag-td .pants-content ul li:nth-child(4) a.pants',function(){
+					$(".role-content .content-row .the-role .role-btm").removeAttr("style");
+					$(".role-content .content-row .the-role .role-btm").attr("style","background-image:url(img/role/boy/trousers/4.png);");
+				})
+
+				$(document).on('click','.submit-change button',function(){
+					$.modal({
+					  title:  '保存确认',
+					  text: '确定保存装扮吗？',
+					  buttons: [
+					    {
+					      text: '不保存',
+					      onClick: function() {
+					      }
+					    },
+					    {
+					      text: '保存',
+					      onClick: function() {
+					        $.toast('已保存装扮！', 1000, 'success top');
+					      }
+					    }
+					  ]
+					})
+				})
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>杂草校园</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+
+		<link rel="stylesheet" href="../main.css">
+	</head>
+	<body>
+			<div class="page testresult_page">
+				<header class="bar bar-nav">
+					<a href="my_test.html" external class="button button-link button-nav pull-left">
+						<span class="icon icon-left"></span>
+					</a>
+					<h1 class='title'>测评结果</h1>
+				</header>
+				<div class="content test-content">
+					<div class="result-header" style="background-image: url(http://huaban.com/img/login_header_blurbg.jpg);">
+						<h5>社交恐惧测评</h5>
+						<span class="badge badge-success">社交</span>
+					</div>
+					<div class="result-info">你和大多数人差不多，在人际交往上，表现的不过不失。一方面，你意识到作为一个“社会人”，我们需要和其他人进行沟通与交流，但是面对难缠的人，你也会感到很头疼。</div>
+					<div class="result-echarts">
+						<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+						<div id="main" style="margin:auto;width: 320px;height:300px;overflow: hidden;"></div>
+					</div>
+				</div>
+			</div>
+
+
+		<script type='text/javascript' src='https://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+        <script type="text/javascript">
+            $.config = {router: false}
+        </script>
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+		<!-- <script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script> -->
+		<script src="https://cdn.bootcss.com/echarts/3.3.2/echarts.min.js"></script>
+		<script type="text/javascript">
+
+	 		// 基于准备好的dom，初始化echarts实例
+	        var myChart = echarts.init(document.getElementById('main'));
+
+	        // 指定图表的配置项和数据
+	        var option = {
+    legend: {
+        orient: "vertical",
+        y: "bottom",
+        data: ["与测评人群比例"]
+    },
+    toolbox: {
+        show: false,
+        feature: {
+            dataView: {
+                readOnly: false
+            }
+        }
+    },
+    polar: [
+        {
+            indicator: [
+                {
+                    text: "独特",
+                    min: 0,
+                    max: 6000
+                },
+                {
+                    text: "有差异",
+                    min: 0,
+                    max: 16000
+                },
+                {
+                    text: "差不多",
+                    min: 0,
+                    max: 30000
+                },
+                {
+                    text: "相似",
+                    min: 0,
+                    max: 38000
+                },
+                {
+                    text: "雷同",
+                    min: 0,
+                    max: 52000
+                }
+            ],
+            type: "polygon"
+        }
+    ],
+    calculable: true,
+    series: [
+        {
+            name: "",
+            type: "radar",
+            data: [
+                {
+                    value: [4300, 10000, 30000, 35000, 40000],
+                    name: "与测评人群比例"
+                }
+            ]
+        }
+    ],
+    tooltip: {
+        trigger: "axis"
+    }
+};
+
+	        // 使用刚指定的配置项和数据显示图表。
+	        myChart.setOption(option);
+
+			$(function () {
+				$.init();
+
+                $.modal({
+                    title:  '杂草提示',
+                    text: '同学您好，有一份礼宾兼职与你的测评条件匹配，请问是否愿意开启短信接收兼职通知功能？',
+                    buttons: [
+                        {
+                            text: '不接收',
+                            onClick: function() {
+                                
+                            }
+                        },
+                        {
+                            text: '接收',
+                            onClick: function() {
+                                $.ajax({
+                                    type: "GET",
+                                    url: "test.php",
+                                    data: {
+                                        // username:$("#username").val(),
+                                        // content:$("#content").val()
+                                    },
+                                    dataType: "json",
+                                    success: function(data){
+                                        
+                                    }
+                                });
+                            }
+                        },
+                    ]
+                })
+			})
+		</script>
+	</body>
+</html>

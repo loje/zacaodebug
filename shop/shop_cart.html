@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>杂草校园</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+
+		<link rel="stylesheet" href="../main.css">
+		<style type="text/css">
+			header.bar-nav{
+				background: linear-gradient(top, rgb(0, 0, 0), rgba(0, 0, 0, 0) 100%);
+				background: -o-linear-gradient(top, rgb(0, 0, 0), rgba(0, 0, 0, 0) 100%);
+				background: -ms-linear-gradient(top, rgb(0, 0, 0), rgba(0, 0, 0, 0) 100%);
+				background: -moz-linear-gradient(top, rgb(0, 0, 0), rgba(0, 0, 0, 0) 100%);
+				background: -webkit-linear-gradient(top, rgb(0, 0, 0), rgba(0, 0, 0, 0) 100%);
+				opacity: 0.5;
+			}
+			.pull-right{
+				padding-left: 10px!important;
+				padding-right: 10px!important;
+			}
+			.shop-content{
+				top:0px!important;
+			}
+
+
+
+			.cart-list .media-list{
+				list-style: none;
+				margin-top: 0px;
+			    padding: 30px 10px 20px 10px;
+			    background-color: #fff;
+			}
+			.cart-list .media-list .media {
+			    margin: 15px 0px;
+			    padding-bottom: 15px;
+			    border-bottom: 1px solid #eee;
+			    vertical-align: middle;
+			}
+			.media-body, .media-left, .media-right {
+			    display: table-cell;
+			    vertical-align: top;
+			}
+			.media-left, .media>.pull-left {
+			    padding-right: 10px;
+			}
+			.cart-list .media-list .media-checkbox {
+			    display: table-cell;
+			    vertical-align: middle;
+			    width: 10%;
+			}
+			.cart-list .media-list .media-checkbox .cart {
+				margin: 4px 0 0;
+			    border: none;
+			    outline: none;
+			    box-shadow: none;
+			}
+			.cart-list .media-list .media .media-left a {
+			    display: block;
+			    width: 70px;
+			    height: 70px;
+			}
+			.cart-list .media-list .media .media-left a .img {
+			    width: 100%;
+			    height: 100%;
+			    background-size: cover;
+			    border-radius: 4px;
+			}
+			.cart-list .media-list .media .media-body {
+			    width: 60%;
+			}
+			.cart-list .media-list .media .media-body h5 {
+			    margin-top: 0px;
+			    margin-bottom: 10px;
+			    font-size: 12px;
+			    font-weight: normal;
+			    color: #333;
+			}
+			.cart-list .media-list .media .media-control {
+			    display: table-cell;
+			    vertical-align: top;
+			    width: 30%;
+			}
+			.cart-list .media-list .media .media-control a.del {
+			    display: block;
+			    color: #666;
+			    text-align: right;
+			}
+			.cart-list .media-list .media .media-control p {
+			    margin-bottom: 0px;
+			    padding-top: 15px;
+			    text-align: right;
+			}
+
+
+			.under {
+			    position: fixed;
+			    left: 0px;
+			    bottom: 0px;
+			    width: 100%;
+			    border-top: 1px solid #eee;
+			    background-color: #fff;
+			}
+			.cart-under {
+			    margin: 0px;
+			    width: 100%;
+			    background-color: #fff;
+			}
+			.cart-under .cart-allchecked {
+			    padding: 0px;
+				float: left;
+			    width: 75%;
+			}
+			.cart-under .cart-allchecked .checkbox {
+			    position: relative;
+			    display: block;
+			    padding: 15px 10px;
+			    margin: 0px;
+			}
+			.cart-under .cart-allchecked .checkbox label{
+			    min-height: 20px;
+			    margin-bottom: 0;
+			    font-weight: 400;
+			    cursor: pointer;
+			    display: inline-block;
+			    max-width: 100%;
+			}
+			.cart-under .cart-allchecked .checkbox label .checkbox input[type=checkbox]{
+				position: absolute;
+			    margin-left: -20px;
+			    margin: 4px 0 0;
+			}
+			.cart-under .cart-allchecked .cart-total {
+			    float: right;
+			    color: #cc0033;
+			    letter-spacing: 1px;
+			}
+			.cart-under .cart-btn {
+				float: left;
+			    padding: 0px;
+			    width: 25%;
+			}
+			.cart-under .cart-btn .btn {
+				display: inline-block;
+			    padding: 15px 0px;
+			    width: 100%;
+			    background-color: #cc0033;
+			    color: #fff;
+			    border:none;
+			}
+
+
+			.shop-siderbar{
+			    padding: 10px 15px;
+			}
+			.shop-siderbar .media{
+				padding-bottom: 15px;
+				border-bottom: 1px dotted rgba(255,255,255,0.1);
+			}
+			.shop-siderbar .media .media-left .user-pic{
+			    width: 40px;
+			    height: 40px;
+			    background-size: cover;
+			    border-radius: 4px;
+			}
+			.shop-siderbar .media .media-body h5,
+			.shop-siderbar .media .media-body p{
+				margin: 0px;
+			}
+			.shop-siderbar .media .media-body p{
+				padding-top: 5px;
+			}
+			.shop-siderbar ul{
+				margin: 0px;
+				list-style: none;
+				padding-left: 0px;
+			}
+			.shop-siderbar ul li{
+				padding-top: 20px;
+			}
+			.shop-siderbar ul li a{
+				letter-spacing: 1px;
+				color: #999;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="page">
+			<header class="bar bar-nav">
+				<a href="javascript:history.go(-1);" class="button button-link button-nav pull-left">
+					<span class="icon icon-left"></span>
+				</a>
+				<!-- <a href="javascript:;" class="button button-link button-nav pull-right open-panel" data-panel='#panel-left-demo'>
+					<i class="iconfontzacao">&#xe61f;</i>
+				</a> -->
+			</header>
+
+			<div class="content shop-content">
+				<div class="cart-list">
+					<ul class="media-list">
+						<li class="media">
+							<div class="media-checkbox">
+								<input type="checkbox" name="cart" class="cart" />
+							</div>
+							<div class="media-left">	
+								<a href="#">
+									<div class="img" style="background-image: url(http://ued.qifanhui.cn/Uploads/Home/Banner/20160511/573294b03880e.jpg);"></div>
+								</a>
+							</div>
+							<div class="media-body">
+								<h5>进口橡胶木圆盘</h5>
+								<div class="intro">
+									<span class="sort">"大号"</span>x<span class="quantity">2</span>
+								</div>
+							</div>
+							<div class="media-control">
+								<a href="" class="del">
+									<i class="iconfontzacao">&#xe617;</i>
+								</a>
+								<p>共<span class="price">1</span>颗种子</p>
+							</div>
+						</li>
+						<li class="media">
+							<div class="media-checkbox">
+								<input type="checkbox" name="cart" class="cart" />
+							</div>
+							<div class="media-left">	
+								<a href="#">
+									<div class="img" style="background-image: url(http://ued.qifanhui.cn/Uploads/Home/Banner/20160511/573294b03880e.jpg);"></div>
+								</a>
+							</div>
+							<div class="media-body">
+								<h5>进口橡胶木圆盘</h5>
+								<div class="intro">
+									<span class="sort">"大号"</span>x<span class="quantity">2</span>
+								</div>
+							</div>
+							<div class="media-control">
+								<a href="" class="del">
+									<i class="iconfontzacao">&#xe617;</i>
+								</a>
+								<p>共<span class="price">1</span>颗种子</p>
+							</div>
+						</li>
+						<li class="media">
+							<div class="media-checkbox">
+								<input type="checkbox" name="cart" class="cart" />
+							</div>
+							<div class="media-left">	
+								<a href="#">
+									<div class="img" style="background-image: url(http://ued.qifanhui.cn/Uploads/Home/Banner/20160511/573294b03880e.jpg);"></div>
+								</a>
+							</div>
+							<div class="media-body">
+								<h5>进口橡胶木圆盘</h5>
+								<div class="intro">
+									<span class="sort">"大号"</span>x<span class="quantity">2</span>
+								</div>
+							</div>
+							<div class="media-control">
+								<a href="" class="del">
+									<i class="iconfontzacao">&#xe617;</i>
+								</a>
+								<p>共<span class="price">1</span>颗种子</p>
+							</div>
+						</li>
+						<li class="media">
+							<div class="media-checkbox">
+								<input type="checkbox" name="cart" class="cart" />
+							</div>
+							<div class="media-left">	
+								<a href="#">
+									<div class="img" style="background-image: url(http://ued.qifanhui.cn/Uploads/Home/Banner/20160511/573294b03880e.jpg);"></div>
+								</a>
+							</div>
+							<div class="media-body">
+								<h5>进口橡胶木圆盘</h5>
+								<div class="intro">
+									<span class="sort">"大号"</span>x<span class="quantity">2</span>
+								</div>
+							</div>
+							<div class="media-control">
+								<a href="" class="del">
+									<i class="iconfontzacao">&#xe617;</i>
+								</a>
+								<p>共<span class="price">1</span>颗种子</p>
+							</div>
+						</li>
+						<li class="media">
+							<div class="media-checkbox">
+								<input type="checkbox" name="cart" class="cart" />
+							</div>
+							<div class="media-left">	
+								<a href="#">
+									<div class="img" style="background-image: url(http://ued.qifanhui.cn/Uploads/Home/Banner/20160511/573294b03880e.jpg);"></div>
+								</a>
+							</div>
+							<div class="media-body">
+								<h5>进口橡胶木圆盘</h5>
+								<div class="intro">
+									<span class="sort">"大号"</span>x<span class="quantity">2</span>
+								</div>
+							</div>
+							<div class="media-control">
+								<a href="" class="del">
+									<i class="iconfontzacao">&#xe617;</i>
+								</a>
+								<p>共<span class="price">1</span>颗种子</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="under">
+				<div class="row cart-under">
+					<div class="col-xs-9 cart-allchecked">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="allChecked" class="cart" onclick="if(this.checked==true){checkAll();}else{uncheckAll();}"> 全选
+							</label>
+							<div class="cart-total">
+								将扣除<span class="total-price">0</span>颗种子
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-3 cart-btn">
+						<button type="submit" class="btn btn-danger cart-submit">付款</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- <div class="panel-overlay"></div>
+		<div class="panel panel-right panel-reveal shop-siderbar" id='panel-left-demo'>
+			<div class="media">
+				<div class="media-left">
+					<div class="user-pic" style="background-image: url(../user/img/userimg.jpg);"></div>
+				</div>
+				<div class="media-body">
+					<h5>用户名称</h5>
+					<p>888颗种子</p>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<a>返回商店首页</a>
+				</li>
+				<li>
+					<a>我的订单</a>
+				</li>
+			</ul>
+		</div> -->
+
+
+		<script type='text/javascript' src='https://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+		<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$.config = {router: false};
+			var Zepto = jQuery;
+		</script>
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+		<script type="text/javascript">
+			$(function(){
+			    $.init();
+
+				$(".shop-content").scroll(function(event) {
+					if($(".shop-content").scrollTop()==0){
+						$(".bar-nav").removeAttr("style");
+					}
+					if($(".shop-content").scrollTop()!=0){
+						$(".bar-nav").attr("style","opacity:1;");
+					}
+				});
+
+				$("input[name='cart']:checkbox").change(function(){
+					var sum=0;
+					$("input[name='cart']:checkbox:checked").each(function(){
+						tot = parseInt($(this).parent().parent().find(".price").text()) * parseInt($(this).parent().parent().find(".quantity").text());
+						sum += tot;
+					});
+					$(".total-price").text(sum);
+				});
+				
+				$("input[name='allChecked']:checkbox").change(function(){
+					var sum=0;
+					$("input[name='cart']:checkbox:checked").each(function(){
+						tot = parseInt($(this).parent().parent().find(".price").text()) * parseInt($(this).parent().parent().find(".quantity").text());
+						sum += tot;
+					});
+					$(".total-price").text(sum);
+				})
+
+				$(document).on('click','.cart-submit',function(){
+					if($(".total-price").text() > 0){
+						$.confirm('操作不可撤销，确认兑换吗?',
+							function () {
+								self.location.href="order_detail.html";
+							}
+						);
+					}else{
+						$.toast("请勾选要兑换的商品");
+					}
+				})
+			})
+
+			function checkAll(){ 
+				var checkboxs=document.getElementsByName("cart");
+				for (var i=0;i<checkboxs.length;i++){
+					var e=checkboxs[i];
+					e.checked = true;
+				}
+			}
+
+			function uncheckAll(){ 
+				var checkboxs=document.getElementsByName("cart");
+				for (var i=0;i<checkboxs.length;i++){
+					var e=checkboxs[i];
+					e.checked = false;
+				} 
+			}
+		</script>
+	</body>
+</html>

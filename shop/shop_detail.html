@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>杂草校园</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+
+		<link rel="stylesheet" href="../main.css">
+		<style type="text/css">
+			header.bar-nav{
+				background: linear-gradient(top, rgb(0, 0, 0), rgba(0, 0, 0, 0) 100%);
+				background: -o-linear-gradient(top, rgb(0, 0, 0), rgba(0, 0, 0, 0) 100%);
+				background: -ms-linear-gradient(top, rgb(0, 0, 0), rgba(0, 0, 0, 0) 100%);
+				background: -moz-linear-gradient(top, rgb(0, 0, 0), rgba(0, 0, 0, 0) 100%);
+				background: -webkit-linear-gradient(top, rgb(0, 0, 0), rgba(0, 0, 0, 0) 100%);
+				opacity: 0.5;
+			}
+			.pull-right{
+				padding-left: 10px!important;
+				padding-right: 10px!important;
+			}
+			.shop-content{
+				top:0px!important;
+			}
+			.choose-fix {
+			    position: fixed;
+			    left: 0px;
+			    bottom: 0px!important;
+			    margin-bottom: 0px!important;
+			    width: 100%;
+			    background-color: #cc0033!important;
+			    color: #fff;
+			    transition: bottom 1s ease, background-color 1s ease, color 1s ease;
+			    -moz-transition: bottom 1s ease, background-color 1s ease, color 1s ease;
+			    -webkit-transition: bottom 1s ease, background-color 1s ease, color 1s ease;
+			    -o-transition: bottom 1s ease, background-color 1s ease, color 1s ease;
+			}
+
+			.cart-ani {
+			    position: fixed;
+			    right: 25%;
+			    top: 100%;
+			    display: inline-block;
+			    width: 10px;
+			    height: 10px;
+			    background-color: #cc0033;
+			    border-radius: 50%;
+			    z-index: 1;
+			    opacity: 0;
+			}
+			.cartani {
+				opacity: 1!important;
+				animation: cartani 1s ease infinite;
+				-moz-animation: cartani 1s ease infinite;
+				-webkit-animation: cartani 1s ease infinite;
+				-o-animation: cartani 1s ease infinite;
+				z-index: 10401;
+			}
+
+			@keyframes cartani {
+				from {
+					top: 100%;
+					right: 25%;
+				}
+				to {
+					top: 15px;
+					right: 20px;
+				}
+			}
+
+			@-webkit-keyframes cartani{
+				from {
+					top: 100%;
+					right: 25%;
+				}
+				to {
+					top: 15px;
+					right: 20px;
+				}
+			}
+
+			.bar-nav .pull-right i span {
+			    display: none;
+			    position: fixed;
+			    right: 20px;
+			    top: 15px;
+			    width: 10px;
+			    height: 10px;
+			    border-radius: 50%;
+			    background-color: #cc0033;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="page">
+			<header class="bar bar-nav">
+				<a href="javascript:history.go(-1);" class="button button-link button-nav pull-left">
+					<span class="icon icon-left"></span>
+				</a>
+				<a href="shop_cart.html" class="button button-link button-nav pull-right">
+					<i class="iconfontzacao">&#xe60f;<span></span></i>
+				</a>
+			</header>
+
+			<div class="content shop-content">
+				<div class="goods-pic">
+					<div class="swiper-container swiper-goods swiper-container-horizontal">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="slide" style="background-image: url(http://ued.qifanhui.cn/Uploads/Home/Banner/20161018/58059a6497f29.jpg);"></div>
+							</div>
+							<div class="swiper-slide">
+								<div class="slide" style="background-image: url(http://ued.qifanhui.cn/Uploads/Home/Banner/20161018/58059a24c5088.jpg);"></div>
+							</div>
+							<div class="swiper-slide">
+								<div class="slide" style="background-image: url(http://ued.qifanhui.cn/Uploads/Home/Banner/20161018/58059a35765e7.jpg);"></div>
+							</div>
+							<div class="swiper-slide">
+								<div class="slide" style="background-image: url(http://ued.qifanhui.cn/Uploads/Home/Banner/20161018/58059a4065550.jpg);"></div>
+							</div>
+							<div class="swiper-slide">
+								<div class="slide" style="background-image: url(http://ued.qifanhui.cn/Uploads/Home/Banner/20161018/58059a58dc322.jpg);"></div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+
+				<div class="goods-detail">
+					<header>
+						<h5>三校限定·三行情书Love</h5>
+						<h5>
+							<small>三行情书，只为你而留</small>
+						</h5>
+						<p>
+							<span class="original">268颗种子</span>
+							<span class="Preferential">216颗种子</span>
+						</p>
+						<p>
+							<label class="label goods-tag">限时优惠</label>
+						</p>
+						<p>
+							<span class="limit">优惠将于2016.12.31 12:00结束</span>
+						</p>
+					</header>
+
+					<div class="choose open-product">
+						<span class="it">请选择规格、数量</span>
+					</div>
+
+					<div class="detail">
+						<h5>商品介绍</h5>
+						<article>三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。三校三行情书，三生七世，只为情故，虽死不悔。</article>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- product Popup -->
+		<div class="popup popup-product">
+			<div class="close-popup choose-close">
+				<i class="iconfontzacao">&#xe604;</i>
+			</div>
+			<div class="media">
+				<div class="media-left">
+					<div class="choose-img" style="background-image: url(http://ued.qifanhui.cn/Uploads/Home/Banner/20161018/580598c6260b5.jpg);"></div>
+				</div>
+				<div class="media-body">
+					<h5>单价 <span>216</span>颗种子</h5>
+					<p>请选择规格</p>
+				</div>
+			</div>
+			<div class="choose-standard">
+				<p>规格</p>
+				<a class="btn btn-default">
+					<span>深大版</span><i></i>
+				</a>
+				<a class="btn btn-default">
+					<span>深职版</span><i></i>
+				</a>
+				<a class="btn btn-default">
+					<span>深信版</span><i></i>
+				</a>
+			</div>
+			<div class="choose-quantity">
+				<p>数量 还剩<span class="only">100</span></p>
+				<div class="input-group">
+					<span class="input-group-btn">
+						<button class="btn btn-default minus-quantity">
+							<i class="iconfontzacao">&#xe61d;</i>
+						</button>
+					</span>
+					<input type="text" id="num" class="form-control" placeholder="1" value="1" disabled="disabled">
+					<span class="input-group-btn">
+						<button class="btn btn-default add-quantity">
+							<i class="iconfontzacao">&#xe61b;</i>
+						</button>
+					</span>
+				</div>
+			</div>
+			<div class="buyit btn-group">
+				<button class="btn cartit">我要兑换</button>
+			</div>
+		</div>
+
+		<span class="cart-ani"></span>
+
+		<script type='text/javascript' src='https://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+		<script type="text/javascript">
+			$.config = {router: false}
+		</script>
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+		<script type="text/javascript">
+			$(function(){
+			    $.init();
+			    $(".goods-pic").height($(window).width());
+
+				$(document).on('click','.open-product', function () {
+					$.popup('.popup-product');
+				});
+
+				$(document).on('click','.choose-standard .btn', function () {
+					$(this).siblings().removeClass("sel-it");
+					$(this).addClass("sel-it");
+				});
+
+				$(".shop-content").scroll(function(event){
+					if($(this).scrollTop() < $(".goods-pic").height()){
+						$(".choose").removeClass("choose-fix");
+					}else{
+						$(".choose").addClass("choose-fix");
+					}
+
+					if($(".shop-content").scrollTop()==0){
+						$(".bar-nav").removeAttr("style");
+					}
+					if($(".shop-content").scrollTop()!=0){
+						$(".bar-nav").attr("style","opacity:1;");
+					}
+				})
+
+				$(".cartit").click(function(){
+					$(".cart-ani").addClass("cartani");
+					var cartani = setTimeout(function(){
+						$(".cart-ani").removeClass("cartani");
+						clearTimeout(cartani);
+						$(".bar-nav .pull-right i span").attr("style","display:inline-block;");
+					},1000);
+					$.closeModal('.popup-product');
+				});
+
+
+
+				var quantity = parseInt($(".choose-quantity .input-group .form-control").val());
+
+				$(".add-quantity").click(function(){
+					if(quantity == $(".only").text()){
+						$(".add-quantity").attr("disabled","disabled");
+					}else{
+						quantity = quantity + 1;
+						$(".minus-quantity").removeAttr("disabled");
+						$(".choose-quantity .input-group .form-control").val(quantity);	
+					}
+				});
+
+				$(".minus-quantity").click(function(){
+					if(quantity == 1){
+						$(".minus-quantity").attr("disabled","disabled");
+					}else{
+						quantity = quantity - 1;
+						$(".add-quantity").removeAttr("disabled");
+						$(".choose-quantity .input-group .form-control").val(quantity);	
+					}
+				});
+
+				$(".choose-quantity .input-group .form-control").change(function(){
+					$(".choose-quantity .input-group .form-control").val(quantity);
+				});
+			})
+		</script>
+	</body>
+</html>

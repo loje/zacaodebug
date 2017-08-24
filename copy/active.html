@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>杂草校园</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+
+		<link rel="stylesheet" href="../main.css">
+	</head>
+	<body>
+		<div class="page active_page">
+			<header class="bar bar-nav">
+				<a href="index.html" data-no-cache="true" class="button button-link button-nav pull-left">
+					<span class="icon icon-left"></span>
+				</a>
+				<h1 class='title'>活动</h1>
+			</header>
+			<div class="content active-content">
+				<!-- Slider -->
+				<div class="swiper-container" data-space-between='10'>
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="img" style="background-image: url(http://wimg.huodongxing.com/Content/app/appom/212542001520902.jpg@!wmlogo);"></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="img" style="background-image: url(http://wimg.huodongxing.com/Content/app/appom/902540778870416.jpeg@!wmlogo);"></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="img" style="background-image: url(http://wimg.huodongxing.com/Content/app/appom/532540465680436.jpeg@!wmlogo);"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="active-block">
+					<div class="buttons-tab">
+						<a href="#tab1" class="tab-link active button">有意思</a>
+						<a href="#tab2" class="tab-link button">高逼格</a>
+					</div>
+					<div class="content-block">
+						<div class="tabs">
+							<div id="tab1" class="tab active">
+								<div class="list-block media-list">
+									<a href="active_detail.html" class="media">
+										<div class="media-left">
+											<div class="img" style="background-image: url(http://mp.qifanhui.cn/Uploads/Home/company/20161205/58450f1ef0e05.jpg);">
+												<span class="state">未开始</span>
+											</div>
+										</div>
+										<div class="media-body">
+											<h5>这里有本小黄书</h5>
+											<p><span class="badge badge-sponsor"><i class="iconfontzacao">&#xe601;</i> 杂草</span></p>
+											<p>深职/深大/信息</p>
+											<p>2016.12.07 15:00</p>
+										</div>
+									</a>
+									<a href="active_detail.html" class="media">
+										<div class="media-left">
+											<div class="img" style="background-image: url(http://mp.qifanhui.cn/Uploads/Home/company/20160531/574daed87ea18.jpg);">
+												<span class="state">已结束</span>
+											</div>
+										</div>
+										<div class="media-body">
+											<h5>壹 舞 舞蹈专场丨STEP UP第二弹</h5>
+											<p><span class="badge badge-sponsor"><i class="iconfontzacao">&#xe601;</i> 深职院校艺术团</span></p>
+											<p>深职院留仙洞校区音乐厅</p>
+											<p>2016-06-01 19:00</p>
+										</div>
+									</a>
+								</div>
+								<a class="btn more-lecture" onclick="get_more()">获取更多</a>
+							</div>
+							<div id="tab2" class="tab">
+								<div class="list-block media-list">
+									<a href="active_detail.html" class="media">
+										<div class="media-left">
+											<div class="img" style="background-image: url(http://mp.qifanhui.cn/Uploads/Home/company/20160531/574d7068bf70c.png);">
+												<span class="state">未开始</span>
+											</div>
+										</div>
+										<div class="media-body">
+											<h5>杂草小霸王电竞大赛</h5>
+											<p><span class="badge badge-sponsor"><i class="iconfontzacao">&#xe601;</i> 杂草</span></p>
+											<p>深职院东校区柳园D栋品味咖啡屋</p>
+											<p>2016-06-01 10:00</p>
+										</div>
+									</a>
+									<a href="active_detail.html" class="media">
+										<div class="media-left">
+											<div class="img" style="background-image: url(http://mp.qifanhui.cn/Uploads/Home/company/20160524/5743c8fdd1b2c.jpg);">
+												<span class="state">已结束</span>
+											</div>
+										</div>
+										<div class="media-body">
+											<h5>一花一世界 插花比赛</h5>
+											<p><span class="badge badge-sponsor"><i class="iconfontzacao">&#xe601;</i> 花艺社</span></p>
+											<p>西区宿舍锦园1-2栋楼下</p>
+											<p>2016-06-01 14:00</p>
+										</div>
+									</a>
+								</div>
+								<a class="btn more-lecture" onclick="get_more()">获取更多</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type='text/javascript' src='https://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+		<script type="text/javascript">
+			$.config = {router: false}
+		</script>
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+		<script type="text/javascript">
+			$(function () {
+				$.init();
+				$(document).keyup(function (event) {
+				    if(event.keyCode==0x4){
+				         //
+				         window.location.reload();
+				    }
+				});
+			})
+		</script>
+	</body>
+</html>

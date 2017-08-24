@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>杂草校园</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+
+		<link rel="stylesheet" href="../openlayers/theme/default/style.css" type="text/css" />
+
+		<link rel="stylesheet" href="../main.css">
+
+	</head>
+	<body>
+		<div class="page page-current">
+			<header class="bar bar-nav">
+				<a href="index.html" class="button button-link button-nav pull-left">
+					<span class="icon icon-left"></span>
+				</a>
+				<input type="text" class="title" id='picker' placeholder="我的课表" />
+			</header>
+			<div class="content content-course">
+				<div class="course-top">
+					<div class="month">12</div>
+					<ul class="week">
+						<li>
+							<a>
+								<span>S</span>
+								<p>27</p>
+							</a>
+						</li>
+						<li class="today">
+							<a>
+								<div class="point"></div>
+								<span>M</span>
+								<p>28</p>
+							</a>
+						</li>
+						<li>
+							<a>
+								<div class="point"></div>
+								<span>T</span>
+								<p>29</p>
+							</a>
+						</li>
+						<li>
+							<a>
+								<span>W</span>
+								<p>30</p>
+							</a>
+						</li>
+						<li>
+							<a>
+								<span>T</span>
+								<p>1</p>
+							</a>
+						</li>
+						<li>
+							<a>
+								<span>F</span>
+								<p>2</p>
+							</a>
+						</li>
+						<li>
+							<a>
+								<span>S</span>
+								<p>3</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="course-list list1">
+					<div class="course-box">
+						<p class="moment">上午</p>
+						<div class="media">
+							<div class="media-left">
+								<span class="serial">1</span>
+							</div>
+							<a class="media-body">
+								<h5>嵌入式系统应用</h5>
+								<p>孙光</p>
+								<p>西丽湖校区 格物园B座412</p>
+							</a>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<span class="serial">2</span>
+							</div>
+							<a class="media-body">
+								<h5>智能家居系统</h5>
+								<p>夏继媛</p>
+								<p>西丽湖校区 格物园B座406</p>
+							</a>
+						</div>
+					</div>
+
+					<div class="course-box">
+						<p class="moment">下午</p>
+						<div class="media">
+							<div class="media-left">
+								<span class="serial">5</span>
+							</div>
+							<a class="media-body">
+								<h5>电子信息专题训练1</h5>
+								<p>晏凯</p>
+								<p>西丽湖校区 格物园B座602</p>
+							</a>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<span class="serial">6</span>
+							</div>
+							<a class="media-body">
+								<h5>传感器技术A</h5>
+								<p>贾方亮</p>
+								<p>西丽湖校区 格物园B座407</p>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="course-list list2" style="display: none;">
+					<div class="course-box">
+						<p class="moment">上午</p>
+						<div class="media">
+							<div class="media-left">
+								<span class="serial">1</span>
+							</div>
+							<a class="media-body">
+								<h5>传感器技术A</h5>
+								<p>贾方亮</p>
+								<p>西丽湖校区 格物园B座407</p>
+							</a>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<span class="serial">2</span>
+							</div>
+							<a class="media-body">
+								<h5>可编程逻辑器件应用B</h5>
+								<p>梁召峰</p>
+								<p>西丽湖校区 格物园B座609</p>
+							</a>
+						</div>
+					</div>
+
+					<div class="course-box">
+						<p class="moment">下午</p>
+						<div class="media">
+							<div class="media-left">
+								<span class="serial">5</span>
+							</div>
+							<a class="media-body">
+								<h5>市场营销</h5>
+								<p>刘晓砚</p>
+								<p>西丽湖校区 日新楼南506</p>
+							</a>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<span class="serial">6</span>
+							</div>
+							<a class="media-body">
+								<h5>嵌入式编程基础</h5>
+								<p>梁召峰</p>
+								<p>西丽湖校区 格物园B座409</p>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="course-list list3" style="display: none;">
+					<div class="none-table">
+						<div class="none-td">
+							<p>今天没课快去嗨</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type='text/javascript' src='https://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+		<script type="text/javascript">
+			$.config = {router: false}
+		</script>
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+		<!-- <script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script> -->
+
+		<script type="text/javascript">
+			$(function(){
+			    $.init();
+
+				$("#picker").picker({
+				  toolbarTemplate: '<header class="bar bar-nav">\
+				  <button class="button button-link pull-right close-picker">确定</button>\
+				  <h1 class="title">请选择周数</h1>\
+				  </header>',
+				  cols: [
+				    {
+				      textAlign: 'center',
+				      values: ['第1周', '第2周', '第3周', '第4周', '第5周', '第6周', '第7周', '第8周', '第9周', '第10周', '第11周', '第12周']
+				    }
+				  ]
+				});
+
+				$(document).on('click','.content-course .course-top ul li a', function () {
+					$(".content-course .course-top ul li").removeClass("chiose");
+					$(this).parent().addClass("chiose");
+				})
+
+				$(document).on('click','.content-course .course-top ul li:nth-child(1) a', function () {
+					$(".list3").removeAttr("style");
+					$(".list1").attr("style","display:none;");
+					$(".list2").attr("style","display:none;");
+				})
+				$(document).on('click','.content-course .course-top ul li:nth-child(2) a', function () {
+					$(".list3").attr("style","display:none;");
+					$(".list1").removeAttr("style");
+					$(".list2").attr("style","display:none;");
+				})
+				$(document).on('click','.content-course .course-top ul li:nth-child(3) a', function () {
+					$(".list3").attr("style","display:none;");
+					$(".list1").attr("style","display:none;");
+					$(".list2").removeAttr("style");
+				})
+				$(document).on('click','.content-course .course-top ul li:nth-child(4) a', function () {
+					$(".list3").removeAttr("style");
+					$(".list1").attr("style","display:none;");
+					$(".list2").attr("style","display:none;");
+				})
+				$(document).on('click','.content-course .course-top ul li:nth-child(5) a', function () {
+					$(".list3").removeAttr("style");
+					$(".list1").attr("style","display:none;");
+					$(".list2").attr("style","display:none;");
+				})
+				$(document).on('click','.content-course .course-top ul li:nth-child(6) a', function () {
+					$(".list3").removeAttr("style");
+					$(".list1").attr("style","display:none;");
+					$(".list2").attr("style","display:none;");
+				})
+				$(document).on('click','.content-course .course-top ul li:nth-child(7) a', function () {
+					$(".list3").removeAttr("style");
+					$(".list1").attr("style","display:none;");
+					$(".list2").attr("style","display:none;");
+				})
+			})
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>杂草校园</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+
+		<link rel="stylesheet" href="../main.css">
+	</head>
+	<body>
+		<div class="page my_vindicate">
+			<header class="bar bar-nav">
+				<a href="javascript:" onclick="self.location=document.referrer;" data-no-cache="true" external class="button button-link button-nav pull-left">
+					<span class="icon icon-left"></span>
+				</a>
+				<h1 class="title">我的表白</h1>
+			</header>
+
+			<div class="content pull-to-refresh-content infinite-scroll infinite-scroll-bottom vindicate-content" data-ptr-distance="55" data-distance="100">
+				<!-- 默认的下拉刷新层 -->
+				<div class="pull-to-refresh-layer">
+					<div class="preloader"></div>
+					<div class="pull-to-refresh-arrow"></div>
+				</div>
+
+				<div class="vindicate-header">
+					<p>你今年共表白了5次</p>
+					<p>收到100个赞</p>
+				</div>
+
+				<div class="my-vindicate">
+					<div class="list-block">
+						<div class="card-container">
+							<div class="card">
+								<div class="card-header">
+									<span>To：芬</span>
+									<a class="likeit">
+										<i class="iconfontzacao">&#xe600;</i><span>10</span>
+									</a>
+								</div>
+								<div class="card-content">
+									<div class="card-content-inner">
+										<div class="love-content">
+											每天想你1次！❤
+										</div>
+									</div>
+								</div>
+								<div class="card-footer">
+									<div class="footer-table">
+										<div class="footer-td">
+											<div class="building">
+												<i class="iconfontzacao">&#xe6c3;</i>
+												<span>教学楼</span>
+											</div>
+										</div>
+										<div class="footer-td">
+											<div class="tolove">
+												<p>From：星星</p>
+												<p>2016.12.01</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header">
+									<span>To：芬</span>
+									<a class="liked" style="opacity:0.5;">
+										<i class="iconfontzacao">&#xe600;</i><span>11</span>
+									</a>
+								</div>
+								<div class="card-content">
+									<div class="card-content-inner">
+										<div class="love-content">
+											每天想你2次！❤
+										</div>
+									</div>
+								</div>
+								<div class="card-footer">
+									<div class="footer-table">
+										<div class="footer-td">
+											<div class="building">
+												<i class="iconfontzacao">&#xe6c3;</i>
+												<span>教学楼</span>
+											</div>
+										</div>
+										<div class="footer-td">
+											<div class="tolove">
+												<p>From：星星</p>
+												<p>2016.12.01</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header">
+									<span>To：芬</span>
+									<a external class="likeit">
+										<i class="iconfontzacao">&#xe600;</i><span>10</span>
+									</a>
+								</div>
+								<div class="card-content">
+									<div class="card-content-inner">
+										<div class="love-content">
+											每天想你3次！❤
+										</div>
+									</div>
+								</div>
+								<div class="card-footer">
+									<div class="footer-table">
+										<div class="footer-td">
+											<div class="building">
+												<i class="iconfontzacao">&#xe6c3;</i>
+												<span>教学楼</span>
+											</div>
+										</div>
+										<div class="footer-td">
+											<div class="tolove">
+												<p>From：星星</p>
+												<p>2016.12.01</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 加载提示符 -->
+					<div class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+					</div>
+				</div>
+			</div>
+			<a class="button-send send-vindicate">发布表白</a>
+		</div>
+		<!-- vindicate Popup -->
+		<div class="popup popup-vindicate">
+			<p class="popup-header">
+				<span class="close-popup">不表白了</span>
+			</p>
+			<div class="content-block">
+				<div class="list-block">
+					<ul>
+						<li>
+							<div class="content-block-title">我想大声告诉你</div>
+							<input type="text" class="form-control name" placeholder="谁？">
+						</li>
+						<li>
+							<div class="content-block-title">我想对你说</div>
+							<textarea class="form-control conte" placeholder="最多80字..."></textarea>
+						</li>
+						<li>
+							<div class="content-block-title">无论你在哪</div>
+							<select class="form-control local">
+								<option>请选择宿舍</option>
+								<option>雅仕楼</option>
+								<option>雅致楼</option>
+							</select>
+						</li>
+						<li>
+							<div class="content-block-title">我就是</div>
+							<input type="text" class="form-control myname" placeholder="谁？">
+						</li>
+					</ul>
+				</div>
+			</div>
+			<a class="submit-vindicate">提交表白</a>
+		</div>
+
+		<script type='text/javascript' src='https://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+		<script type="text/javascript">
+			$.config = {router: false}
+		</script>
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+		<!-- <script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script> -->
+		<script type="text/javascript">
+			$(function () {
+				$.init();
+				$(document).on('click','.send-vindicate', function () {
+					$.popup('.popup-vindicate');
+				});
+				$(document).on('click','.submit-vindicate', function () {
+					if($(".name").val() == ""){
+						alert('请填写被表白人名字');
+						return false;
+					}else if($(".conte").val() == ""){
+						alert('请填写表白内容');
+						return false;
+					}else if($(".local").val() == "0"){
+						alert('请选择宿舍');
+						return false;
+					}else{
+						$.alert("表白成功~！❤");
+						$.closeModal('.popup-vindicate');
+					}
+				})
+
+				$(document).on('click','.likeit', function () {
+					$(this).parent().find('span').after('<a external class="liked" style="opacity:0.5;">' +
+															'<i class="iconfontzacao">&#xe600;</i>' +
+															'<span>11</span>' +
+														'</a>');
+					$(this).remove();
+				});
+				$(document).on('click','.liked', function () {
+					$(this).parent().find('span').after('<a external class="likeit">' +
+															'<i class="iconfontzacao">&#xe600;</i>' +
+															'<span>10</span>' +
+														'</a>');
+					$(this).remove();
+				});
+
+
+				// 添加'refresh'监听器
+				$(document).on('refresh', '.pull-to-refresh-content',function(e) {
+				    // 模拟2s的加载过程
+				    setTimeout(function() {
+				        var cardNumber = $(e.target).find('.card').length + 1;
+				        var cardHTML = '<div class="card">' +
+													'<div class="card-header">' +
+														'<span>To：芬</span>' +
+														'<a class="likeit">' +
+															'<i class="iconfontzacao">&#xe600;</i>' +
+															'<span>10</span>' +
+														'</a>' +
+													'</div>' +
+													'<div class="card-content">' +
+														'<div class="card-content-inner">' +
+															'<div class="love-content">' +
+																'每天想你' + cardNumber +'次！❤' +
+															'</div>' +
+														'</div>' +
+													'</div>' +
+													'<div class="card-footer">' +
+														'<div class="footer-table">' +
+															'<div class="footer-td">' +
+																'<div class="building">' +
+																	'<i class="iconfontzacao">&#xe6c3;</i>' +
+																	'<span>教学楼</span>' +
+																'</div>' +
+															'</div>' +
+															'<div class="footer-td">' +
+																'<div class="tolove">' +
+																	'<p>From：星星</p>' +
+																	'<p>2016.12.01</p>' +
+																'</div>' +
+															'</div>' +
+														'</div>' +
+													'</div>' +
+												'</div>';
+
+				        $(e.target).find('.card-container').prepend(cardHTML);
+				        // 加载完毕需要重置
+				        $.pullToRefreshDone('.pull-to-refresh-content');
+				    }, 2000);
+				});
+
+				// 加载flag
+				var loading = false;
+				// 最多可加载的条目
+				var maxItems = 30;
+
+				// 每次加载添加多少条目
+				var itemsPerLoad = 5;
+
+				function addItems(number, lastIndex) {
+					// 生成新条目的HTML
+					var html = '';
+					for (var i = lastIndex + 1; i <= lastIndex + number; i++) {
+						  html += '<div class="card">' +
+									'<div class="card-header">' +
+										'<span>To：芬</span>' +
+										'<a class="likeit">' +
+											'<i class="iconfontzacao">&#xe600;</i>' +
+											'<span>10</span>' +
+										'</a>' +
+									'</div>' +
+									'<div class="card-content">' +
+										'<div class="card-content-inner">' +
+											'<div class="love-content">' +
+												'每天想你' + i +'次！❤' +
+											'</div>' +
+										'</div>' +
+									'</div>' +
+									'<div class="card-footer">' +
+										'<div class="footer-table">' +
+											'<div class="footer-td">' +
+												'<div class="building">' +
+													'<i class="iconfontzacao">&#xe6c3;</i>' +
+													'<span>教学楼</span>' +
+												'</div>' +
+											'</div>' +
+											'<div class="footer-td">' +
+												'<div class="tolove">' +
+													'<p>From：星星</p>' +
+													'<p>2016.12.01</p>' +
+												'</div>' +
+											'</div>' +
+										'</div>' +
+									'</div>' +
+								'</div>';
+					  }
+					  // 添加新条目
+					  $('.infinite-scroll-bottom .list-block .card-container').append(html);
+
+				  }
+				  //预先加载20条
+				addItems(itemsPerLoad, 0);
+
+				// 上次加载的序号
+
+				var lastIndex = 5;
+
+				// 注册'infinite'事件处理函数
+				$(document).on('infinite', '.infinite-scroll-bottom',function() {
+
+				  // 如果正在加载，则退出
+				  if (loading) return;
+
+				  // 设置flag
+				  loading = true;
+
+				  // 模拟1s的加载过程
+				  setTimeout(function() {
+					  // 重置加载flag
+					  loading = false;
+
+					  if (lastIndex >= maxItems) {
+						  // 加载完毕，则注销无限加载事件，以防不必要的加载
+						  $.detachInfiniteScroll($('.infinite-scroll'));
+						  // 删除加载提示符
+						  $('.infinite-scroll-preloader').remove();
+						  return;
+					  }
+
+					  // 添加新条目
+					  addItems(itemsPerLoad, lastIndex);
+					  // 更新最后加载的序号
+					  lastIndex = $('.card-container .card').length;
+					  //容器发生改变,如果是js滚动，需要刷新滚动
+					  $.refreshScroller();
+				  }, 1000);
+				});
+			})
+		</script>
+	</body>
+</html>

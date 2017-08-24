@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>杂草校园</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+
+		<link rel="stylesheet" href="../main.css">
+	</head>
+	<body class="role_page">
+		<div class="page roletask_page">
+			<header class="bar bar-nav">
+				<a href="index.html" class="button button-link button-nav pull-left">
+					<span class="icon icon-left"></span>
+				</a>
+				<a class="button button-link button-nav pull-right open-panel select-map" data-panel='#panel-select-map'>
+					<i class="iconfontzacao">&#xe61e;</i>
+				</a>
+				<h1 class="title">任务</h1>
+			</header>
+
+			<div class="content pull-to-refresh-content infinite-scroll infinite-scroll-bottom task-content" data-ptr-distance="55" data-distance="100">
+				<!-- 默认的下拉刷新层 -->
+				<div class="pull-to-refresh-layer">
+					<div class="preloader"></div>
+					<div class="pull-to-refresh-arrow"></div>
+				</div>
+
+				<div class="task-list">
+					<div class="task-card">
+						<div class="img" style="background-image: url(http://game.gtimg.cn/images/yxzj/match/kpl/top_bg.jpg);">
+							<span class="badge">EXP+10</span>
+						</div>
+						<div class="task-info">
+							<h5>King Pro League</h5>
+							<p><a class="task-link unfinish-task">完成任务</a></p>
+							<div class="progress-bar">
+								<div class="progress" style="width:35%;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="task-card">
+						<div class="img" style="background-image: url(http://game.gtimg.cn/images/yxzj/match/cs_hd1.jpg);">
+							<span class="badge">EXP+10</span>
+						</div>
+						<div class="task-info">
+							<h5>王者城市赛</h5>
+							<p><a class="task-link unfinish-task">完成任务</a></p>
+							<div class="progress-bar">
+								<div class="progress" style="width:35%;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="task-card">
+						<div class="img" style="background-image: url(http://tga.qq.com/home/img/index_bgi00.jpg);">
+							<span class="badge">EXP+10</span>
+						</div>
+						<div class="task-info">
+							<h5>King Pro League</h5>
+							<p><a class="task-link unfinish-task">King Pro League完成任务</a></p>
+							<div class="progress-bar">
+								<div class="progress" style="width:35%;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="task-card">
+						<div class="img" style="background-image: url(http://game.gtimg.cn/images/yxzj/act/a20160613champion/internal/pc/hd1_con.jpg?v=2);">
+							<span class="badge">EXP+10</span>
+						</div>
+						<div class="task-info">
+							<h5>世博创意秀场</h5>
+							<p><a class="task-link unfinish-task">King Pro League完成任务</a></p>
+							<div class="progress-bar">
+								<div class="progress" style="width:35%;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="task-card">
+						<div class="img" style="background-image: url(http://game.gtimg.cn/images/yxzj/match/kpl/top_bg.jpg);">
+							<span class="badge">EXP+10</span>
+						</div>
+						<div class="task-info">
+							<h5>King Pro League</h5>
+							<p><a class="task-link unfinish-task">King Pro League完成任务</a></p>
+							<div class="progress-bar">
+								<div class="progress" style="width:35%;"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
+				<!-- 加载提示符 -->
+				<div class="infinite-scroll-preloader">
+					<div class="preloader"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel-overlay"></div>
+		<!-- Left Panel with Reveal effect -->
+		<div class="panel panel-right panel-reveal theme-dark" id='panel-select-map'>
+			<div class="content-block">
+				<ul>
+					<li>
+						<a class="tab-item" href="bag.html">
+							<span class="icon">
+								<i class="iconfontzacao">&#xe666;</i>
+							</span>
+							<p class="tab-label">背包</p>
+						</a>
+					</li>
+					<li>
+						<a class="tab-item" href="props.html">
+							<span class="icon">
+								<i class="iconfontzacao">&#xe60d;</i>
+							</span>
+							<p class="tab-label">道具</p>
+						</a>
+					</li>
+					<li>
+						<a class="tab-item" href="task.html" style="opacity: 0.25;-webkit-opacity: 0.25;">
+							<span class="icon">
+								<i class="iconfontzacao">&#xe807;</i>
+							</span>
+							<p class="tab-label">任务</p>
+						</a>
+					</li>
+					<li>
+						<a class="tab-item" href="reward.html">
+							<span class="icon">
+								<i class="iconfontzacao">&#xe608;</i>
+							</span>
+							<p class="tab-label">奖励</p>
+						</a>
+					</li>
+					<li>
+						<a class="tab-item" href="record.html">
+							<span class="icon">
+								<i class="iconfontzacao">&#xe607;</i>
+							</span>
+							<p class="tab-label">成就</p>
+						</a>
+					</li>
+					<li>
+						<a class="tab-item" href="ranking.html">
+							<span class="icon">
+								<i class="iconfontzacao">&#xe64e;</i>
+							</span>
+							<p class="tab-label">排行榜</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<script type='text/javascript' src='https://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+		<script type="text/javascript">
+			$.config = {router: false}
+		</script>
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+		<!-- <script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script> -->
+
+		<script type="text/javascript">
+			$(function(){
+				$.init();
+
+				$(document).on('click','.task-list .task-card .task-info p a.unfinish-task',function () {
+					$.alert("任务完成！");
+					$(this).text("已完成");
+					$(this).find(".progress").attr("style","width:40%;");
+					$(this).removeClass("unfinish-task");
+				})
+
+				// 下拉刷新
+				$.initPullToRefresh('.pull-to-refresh-content')
+				// 添加'refresh'监听器
+				$(document).on('refresh', '.pull-to-refresh-content',function(e) {
+					// 模拟2s的加载过程
+					setTimeout(function() {
+						var cardNumber = $(e.target).find('.task-list .task-card').length + 1;
+						var cardHTML = '<div class="task-card">' +
+											'<div class="img" style="background-image: url(http://game.gtimg.cn/images/yxzj/match/kpl/top_bg.jpg);">' +
+												'<span class="badge">EXP+10</span>' +
+											'</div>' +
+											'<div class="task-info">' +
+												'<h5>King Pro League</h5>' +
+												'<p><a class="task-link unfinish-task">完成任务</a></p>' +
+												'<div class="progress-bar">' +
+													'<div class="progress" style="width:35%;"></div>' +
+												'</div>' +
+											'</div>' +
+										'</div>';
+
+						$(e.target).find('.task-list').prepend(cardHTML);
+						// 加载完毕需要重置
+						$.pullToRefreshDone('.pull-to-refresh-content');
+					}, 2000);
+				});
+
+
+				//无限滚动
+
+				// 加载flag
+				var loading = false;
+				// 最多可加载的条目
+				var maxItems = 50;
+
+				// 每次加载添加多少条目
+				var itemsPerLoad = 10;
+
+				function addItems(number, lastIndex) {
+					  // 生成新条目的HTML
+					  var html = '';
+					  for (var i = lastIndex + 1; i <= lastIndex + number; i++) {
+						  html += '<div class="task-card">' +
+										'<div class="img" style="background-image: url(http://game.gtimg.cn/images/yxzj/match/kpl/top_bg.jpg);">' +
+											'<span class="badge">EXP+10</span>' +
+										'</div>' +
+										'<div class="task-info">' +
+											'<h5>King Pro League</h5>' +
+											'<p><a class="task-link unfinish-task">完成任务</a></p>' +
+											'<div class="progress-bar">' +
+												'<div class="progress" style="width:35%;"></div>' +
+											'</div>' +
+										'</div>' +
+									'</div>';
+					  }
+					  // 添加新条目
+					  $('.infinite-scroll-bottom .task-list').append(html);
+				  }
+				  //预先加载10条
+				addItems(itemsPerLoad, 0);
+
+				// 上次加载的序号
+				var lastIndex = 10;
+
+				// 注册'infinite'事件处理函数
+				$(document).on('infinite', '.infinite-scroll-bottom',function() {
+
+				  // 如果正在加载，则退出
+				  if (loading) return;
+
+				  // 设置flag
+				  loading = true;
+
+				  // 模拟1s的加载过程
+				  setTimeout(function() {
+					  // 重置加载flag
+					  loading = false;
+
+					  if (lastIndex >= maxItems) {
+						  // 加载完毕，则注销无限加载事件，以防不必要的加载
+						  $.detachInfiniteScroll($('.infinite-scroll'));
+						  // 删除加载提示符
+						  $('.infinite-scroll-preloader').remove();
+						  $('.infinite-scroll-bottom .task-list').append('<p class="loaded">加载完毕</p>');
+						  return;
+					  }
+
+					  // 添加新条目
+					  addItems(itemsPerLoad, lastIndex);
+					  // 更新最后加载的序号
+					  lastIndex = $('.task-list .task-card').length;
+					  //容器发生改变,如果是js滚动，需要刷新滚动
+					  $.refreshScroller();
+				  }, 1000);
+				});
+
+			})
+		</script>
+	</body>
+</html>
